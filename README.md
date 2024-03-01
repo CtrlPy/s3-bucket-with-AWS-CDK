@@ -1,13 +1,13 @@
 
-# Welcome to your CDK Python project create an s3 bucket with AWS CDK!
+### Welcome to your CDK Python project create an s3 bucket with AWS CDK!
 
 This is a blank project for CDK development with Python.
 
-### *step1* :
+#### *step1* :
 
  1. Install AWS CLI and configure
 
-### *step2* : 
+#### *step2* : 
 
  2. nvm installer
 
@@ -61,7 +61,7 @@ nvm use vA.B.C
 
 NVM makes it easier to manage multiple versions of Node.js across different projects that require different versions.
 
-### *step3* :
+#### *step3* :
 
 Install aws-cdk package using the below command.
 
@@ -75,7 +75,7 @@ To see whether the CDK is installed, run the below command.
 cdk --version
 ```
 
-### *step4* :
+#### *step4* :
 
 Create an s3 bucket
 
@@ -117,7 +117,7 @@ pip install -r requirements.txt
 ```
 
 
-### *step5* :
+#### *step5* :
 
  Create an S3 bucket
 
@@ -182,7 +182,7 @@ class MediumAwscdkStack(Stack):
 ```
 
 
-### *step6* : 
+#### *step6* : 
 
 Our code is now ready to be deployed.
 
@@ -269,12 +269,12 @@ from aws_cdk import (
       )
 ```
 
-### _Note:_
+#### _Note:_
 
 Some properties of S3 and other resources cannot be modified after creation. So, if we are trying to make any change in the resource’s settings, a new resource will be created with the revised properties and the old one will be deleted. (For S3 buckets, a new bucket will be created with the new settings and the old bucket will be removed). But, when the removal policy is `_retain_`, the old resource will be retained and **not deleted**. It is the default option to avoid any loss of data in case the s3 bucket properties are modified accidentally.
 
 
-## Useful commands
+#### Useful commands
 
  * `cdk ls`          list all stacks in the app
  * `cdk synth`       emits the synthesized CloudFormation template
